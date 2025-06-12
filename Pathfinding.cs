@@ -225,7 +225,7 @@ namespace PathFinder
             }
 
             //Right
-            if (gridPosition.x + 1 <= _gridSys.GetWidth())
+            if (gridPosition.x + 1 < _gridSys.GetWidth())
             {
                 neighbors.Add(GetNode(gridPosition.x + 1, gridPosition.z + 0));
 
@@ -246,7 +246,7 @@ namespace PathFinder
             }
 
             //Up
-            if (gridPosition.z + 1 <= _gridSys.GetLength())
+            if (gridPosition.z + 1 < _gridSys.GetLength())
             {
                 neighbors.Add(GetNode(gridPosition.x + 0, gridPosition.z + 1));
             }
